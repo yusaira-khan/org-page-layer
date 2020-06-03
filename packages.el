@@ -64,14 +64,13 @@ Each entry is either:
 (defun org-page/init-org-page ()
   (spacemacs/declare-prefix "ab" "blog")
   (use-package org-page
-    :config (progn (setq op/repository-directory "~/src/blog"
-                         op/site-main-title "pschorf's blog"
-                         op/site-sub-title "A work in progress"
-                         op/site-domain "https://pschorf.github.io"
-                         op/theme-root-directory "~/src/"
+    :config (progn (setq op/repository-directory "~/Github/blog"
+                         op/site-main-title "Yusaira's Blog"
+                         op/site-sub-title "I don't know?"
+                         op/site-domain "yusaira.ca/blog/"
                          op/theme 'org-page-theme-kactus
                          op/personal-github-link "http://github.com/pschorf"
-                         op/personal-google-analytics-id "UA-74427262-1")
+                         )
                    (spacemacs/set-leader-keys
                      "abp" 'op/do-publication-and-preview-site
                      "abP" 'op/do-publication
