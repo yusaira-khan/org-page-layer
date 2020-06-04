@@ -30,7 +30,7 @@
 ;;; Code:
 
 (defconst org-page-packages
-  '(org-page)
+  '((org-page :location local))
 
   "The list of Lisp packages required by the org-page layer.
 
@@ -68,10 +68,10 @@ Each entry is either:
                          op/site-main-title "Yusaira's Blog"
                          op/site-sub-title "I don't know?"
                          op/site-domain "yusaira.ca/blog/"
-                         op/theme 'org-page-theme-kactus
-                         op/personal-github-link "http://github.com/pschorf"
+                         op/theme 'kactus
+			 op/load-directory "~/org-page-cache/"
+                         op/personal-github-link "http://github.com/yusaira-khan"
                          )
                    (spacemacs/set-leader-keys
-                     "abp" 'op/do-publication-and-preview-site
-                     "abP" 'op/do-publication
+                     "abp" 'op/do-publication
                      "abn" 'op/new-post))))
