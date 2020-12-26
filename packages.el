@@ -21,4 +21,5 @@
                    (spacemacs/set-leader-keys
                      "abp" 'op/do-publication-and-preview-site
                      "abP" 'op/do-publication
+                     "abm" 'op/preview-master
                      "abn" 'op/new-post))))
